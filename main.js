@@ -53,6 +53,8 @@ function logic(arr) {
 		checkWinner(arr[0]);
 	} else if (arr[2] !== undefined && arr[2] === arr[4] && arr[2] === arr[6]) {
 		checkWinner(arr[2]);
+	} else if (moves === 9) {
+		alert('Tie');
 	}
 }
 
