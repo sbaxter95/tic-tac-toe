@@ -7,6 +7,7 @@ var $grid = $('.grid');
 $grid.one('click', function (event){
 	if (playerX === true) {
 		$(this).addClass('x');
+		$(this).html('X');
 		var a = parseFloat($(this).attr('id'));
 		arr[a] = 'x';
 		moves++;
@@ -16,7 +17,7 @@ $grid.one('click', function (event){
 	}
 	else {
 		$(this).addClass('o');
-		console.log($(this).html());
+		$(this).html('O');
 		var a = parseFloat($(this).attr('id'));
 		arr[a] = 'o';
 		moves++;
@@ -30,11 +31,6 @@ $grid.one('click', function (event){
 //Array
 
 //If winner, display winner's message
-
-//Maximum of 9 moves - variable - gets to 9 - tie?
-if (moves === 9) {
-	//Tie
-}
 
 function logic(arr) {
 	if (arr[0] !== undefined && arr[0] === arr[1] && arr[0] === arr[2]) {

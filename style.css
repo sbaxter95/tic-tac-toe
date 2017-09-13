@@ -8,6 +8,7 @@ body {
 	height: 200px;
 	display: inline-block;
 	color: rgba(0,0,0,0);
+	vertical-align: top;
 }
 
 .frame {
@@ -18,11 +19,15 @@ body {
 .o {
 	width: 200px;
 	height: 200px;
-	background-color: red;
+	font-size: 169px;
+	text-align: center;
+	color: red;
 }
 
 .x {
 	width: 200px;
 	height: 200px;
-	background-color: blue;
+	font-size: 169px;
+	text-align: center;
+	color: blue;
 }
