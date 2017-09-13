@@ -12,6 +12,7 @@ $grid.one('click', function (event){
 		moves++;
 		console.log(moves);
 		playerX = false;
+		logic(arr);
 	}
 	else {
 		$(this).addClass('o');
@@ -21,6 +22,7 @@ $grid.one('click', function (event){
 		moves++;
 		console.log(moves);
 		playerX = true;
+		logic(arr);
 	}
 });
 
@@ -37,13 +39,15 @@ if (moves === 9) {
 function logic(arr) {
 	if (arr[0] === arr[1] && arr[0] === arr[2]) {
 		checkWinner(arr[0]);
+	} else if (arr[3] === arr[4] && arr[3] === arr[5]) {
+		checkWinner(arr[3]);
 	}
 }
 
 function checkWinner(index) {
 	if (index === 'x') {
-		return 'X wins';
+		alert('X wins');
 	} else {
-		return 'O wins';
+		alert('O wins');
 	}
 }
