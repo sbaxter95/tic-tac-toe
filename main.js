@@ -2,17 +2,22 @@ var playerX = true;
 var moves = 0;
 var arr = [];
 
-//Alternate between X and O 
+//Alternate between X and O and create a virtual representation in an array
 var $grid = $('.grid');
 $grid.one('click', function (event){
 	if (playerX === true) {
 		$(this).addClass('x');
+		var a = parseFloat($(this).html());
+		arr[a] = 'x';
 		moves++;
 		console.log(moves);
 		playerX = false;
 	}
 	else {
 		$(this).addClass('o');
+		console.log($(this).html());
+		var a = parseFloat($(this).html());
+		arr[a] = 'o';
 		moves++;
 		console.log(moves);
 		playerX = true;
