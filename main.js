@@ -33,3 +33,17 @@ $grid.one('click', function (event){
 if (moves === 9) {
 	//Tie
 }
+
+function logic(arr) {
+	if (arr[0] === arr[1] && arr[0] === arr[2]) {
+		checkWinner(arr[0]);
+	}
+}
+
+function checkWinner(index) {
+	if (index === 'x') {
+		return 'X wins';
+	} else {
+		return 'O wins';
+	}
+}
