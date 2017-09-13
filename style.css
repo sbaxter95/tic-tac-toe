@@ -1,19 +1,24 @@
 body {
-	margin: 0 auto;
+	background-color: black;
+	font-family: 'Cabin', sans-serif;
 }
 
 .grid {
-	border: 2px solid black;
+	border: 2px solid white;
 	width: 200px;
 	height: 200px;
 	display: inline-block;
 	color: rgba(0,0,0,0);
 	vertical-align: top;
+	box-shadow: 9px 7px 22px 1px rgba(255,255,255,1);
 }
 
-.frame {
-	width: 600px;
-	height: 600px;
+.container {
+	width: 650px;
+	height: 700px;
+	margin-top: 50px;
+	margin-left: 400px;
+	vertical-align: top;
 }
 
 .o {
@@ -21,7 +26,8 @@ body {
 	height: 200px;
 	font-size: 169px;
 	text-align: center;
-	color: red;
+	color: #D49F12;
+	background-color: #006073;
 }
 
 .x {
@@ -29,5 +35,27 @@ body {
 	height: 200px;
 	font-size: 169px;
 	text-align: center;
-	color: blue;
+	color: #006073;
+	background-color: #D49F12;
+}
+
+button {
+	margin-left: 700px;
+	color: white;
+	background-color: #006073;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 4em;
+}
+
+#output {
+	text-align: center;
+	color: white;
+	font-size: 60px;
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
