@@ -7,7 +7,7 @@ var $grid = $('.grid');
 $grid.one('click', function (event){
 	if (playerX === true) {
 		$(this).addClass('x');
-		var a = parseFloat($(this).html());
+		var a = parseFloat($(this).attr('id'));
 		arr[a] = 'x';
 		moves++;
 		console.log(moves);
@@ -16,7 +16,7 @@ $grid.one('click', function (event){
 	else {
 		$(this).addClass('o');
 		console.log($(this).html());
-		var a = parseFloat($(this).html());
+		var a = parseFloat($(this).attr('id'));
 		arr[a] = 'o';
 		moves++;
 		console.log(moves);
