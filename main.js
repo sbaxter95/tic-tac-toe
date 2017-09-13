@@ -27,11 +27,6 @@ $grid.one('click', function (event){
 	}
 });
 
-//After each player has made a move, check to see if someone has won
-//Array
-
-//If winner, display winner's message
-
 function logic(arr) {
 	if (arr[0] !== undefined && arr[0] === arr[1] && arr[0] === arr[2]) {
 		checkWinner(arr[0]);
@@ -50,14 +45,18 @@ function logic(arr) {
 	} else if (arr[2] !== undefined && arr[2] === arr[4] && arr[2] === arr[6]) {
 		checkWinner(arr[2]);
 	} else if (moves === 9) {
-		alert('Tie');
+		$('#output').html('Tie');
 	}
 }
 
 function checkWinner(index) {
 	if (index === 'x') {
-		alert('X wins');
+		$('#output').html('X wins');
 	} else {
-		alert('O wins');
+		$('#output').html('O wins')
 	}
 }
+
+$('button').click(function (event){
+	location.reload();
+});
