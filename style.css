@@ -1,0 +1,19 @@
+.grid {
+	border: 2px solid black;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+
+.frame {
+	width: 600px;
+	height: 600px;
+}
+
+.o {
+
+}
+
+.x {
+	
+}
